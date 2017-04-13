@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Exos javascript</title>
+    </head>
+    <body>
+
+      <audio src="./SchubertMoments.mp3" id="SchubertMoments"></audio>
+      <audio src="./Talking.mp3" id="Talking"></audio>
+
+      <p id="Greeting" ></p>
+
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" value=""/>
+          <label for ="age">Age:</label>
+          <input type="text" id="age" value=""/>
+          <input type="button" value="OK" onclick="myForm();"/>
+        </form>
+
+        <script>
+          function myForm() {
+            var Name = document.getElementById('name').value;
+            var Age = document.getElementById('age').value;
+            var Welcome = ("Hello " + Name + "!");
+            document.getElementById("Greeting").innerHTML = Welcome;
+              if (Age < 18) {
+                player = document.getElementById("SchubertMoments");
+              }
+              else {
+                player = document.getElementById("Talking");
+              }
+              player.play();
+          }
+        </script>
+
+    </body>
+</html>
