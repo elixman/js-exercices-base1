@@ -1,5 +1,7 @@
 # Exercices JavaScript
 
+Preview : https://htmlpreview.github.io/?https://github.com/elixman/js-exercices-base1/blob/master/index.html
+
 ## Exercice 1 :
 * Demander le nom et l'âge de l'utilisateur **sur le document html via un formulaire**
 
